@@ -14,5 +14,6 @@ $(".col-11").on("click", "p", function () {
         .addClass("event-edit")
         .val(text);
         $(this).replaceWith(textInput);
+        textInput.trigger("focus");
 
 });
