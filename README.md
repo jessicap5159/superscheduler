@@ -12,7 +12,7 @@ HTML, CSS, JavaScript, JQuery, Bootstrap, and FontAwesome
 ******
 
 ## Credits
-A lot of help from Janarthani Subbramaniam; also momentjs.com, arclab.com, stackoverflow.com, and careerkarma.com.
+A lot of help from Janarthani Subbramaniam; also momentjs.com, w3schools.com, arclab.com, stackoverflow.com, and careerkarma.com.
 
 ## License
 GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
