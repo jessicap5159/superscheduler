@@ -3,13 +3,13 @@
 ## Purpose/Description
 A digital daily planner to keep track of your tasks from 9-5 every work day. Date automatically updates at the top of the page, and each time slot has an input field where you can enter your task. The task will be saved on refresh, and the time slots are color-coded to indicate if your task is in the past, present, or future.
 
-![screen shot of ](./images/screenshot.png) *** change this
+![screen shot of SuperScheduler](./images/screenshot.png)
 
 ## Built With
 HTML, CSS, JavaScript, JQuery, Bootstrap, and FontAwesome
 
 ## Website
-******
+https://jessicap5159.github.io/superscheduler/
 
 ## Credits
 A lot of help from Janarthani Subbramaniam; also momentjs.com, w3schools.com, arclab.com, stackoverflow.com, and careerkarma.com.
