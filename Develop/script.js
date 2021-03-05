@@ -1,3 +1,12 @@
+// Initializing variables
+
+var currentTime = moment();
+
+var timeCounter = moment("9 am", "hh A");
+
+var todayDate = moment().format("MM-DD-YYYY");
+
+
 // Display date and time in header
 function date_time() {
     now = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
@@ -6,21 +15,15 @@ function date_time() {
 }
 date_time();
 
-// Pseudocode for saving tasks:
-// user enters/edits task and clicks 'save' button... onclick event?
-// data is sent to localStorage... setitem
-// data is retrieved from localStorage ...getitem
-// data is displayed on page and persists when page is reloaded ...JSON.parse(window.localStorage.getItem('x'));
+// Function to clear storage on each new day
+$(document).ready(function() {
+    var storedDate = localStorage.getItem("currentDate");
+    if (storedDate != todayDate) {
+        localStorage.clear();
+    }
+    displayStorage();
+});
 
-// Pseudocode for color-coding:
-// user views time blocks - audit task? convert to momemt object? remove old class and apply new?
-// current hour is red
-// past hours are gray
-// future hours are green
-
-var currentTime = moment();
-
-var timeCounter = moment("9 am", "hh A");
 
 
 // Function to assign time to each span
@@ -44,8 +47,12 @@ $(".save").on("click", function() {
     var timeSlot = $(this).prev("input").prev("span")[0].outerText;
     var myEvent = $(this).prev("input")[0].value;
     localStorage.setItem(timeSlot, myEvent);
-    
+    var currentDate = moment().format("MM-DD-YYYY");
+    localStorage.setItem("currentDate", currentDate);
+    console.log(currentDate);
 });
+
+
 
    function displayStorage() { 
     $("span").each(function(){
